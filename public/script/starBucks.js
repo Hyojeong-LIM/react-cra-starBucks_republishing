@@ -203,8 +203,8 @@
 
               // 4. 페이지 이벤트 함수
               //    효과적용 : 동그라미 색상 변경 현재 슬라이드에만 적용
-              //    동그라미 이미지 속성 src='' 값을 변경 속성 attribute 어트리뷰트
-              //    현재 슬라이드의 페이지버튼 자식요소인 이미지 src='경로/이미지' 속성변경
+              //    동그라미 이미지 속성 src={process.env.PUBLIC_URL+'' 값을 변경 속성 attribute 어트리뷰트
+              //    현재 슬라이드의 페이지버튼 자식요소인 이미지 src={process.env.PUBLIC_URL+'경로/이미지' 속성변경
                 function pageEvent(){
                   // console.log( cnt );
                   pageBtn                 .children().attr('src','./images/main_prom_off.png')
